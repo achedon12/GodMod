@@ -6,9 +6,11 @@ use achedon\godmod\Godmod;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
+use pocketmine\plugin\Plugin;
+use pocketmine\plugin\PluginOwned;
 use pocketmine\Server;
 
-class GodModCMD extends Command{
+class GodModCMD extends Command implements PluginOwned {
 
     public function __construct()
     {
@@ -31,5 +33,10 @@ class GodModCMD extends Command{
             Godmod::getInstance()->godmod[$sender->getName()] = $sender;
             $sender->sendMessage("§eYou are now in godmod");
         }
+    }
+
+    public function getOwningPlugin(): Plugin
+    {
+        return Godmod::getInstance();
     }
 }
