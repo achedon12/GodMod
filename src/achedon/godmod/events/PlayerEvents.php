@@ -10,7 +10,8 @@ use pocketmine\player\Player;
 
 class PlayerEvents implements Listener{
 
-    public function onDamage(EntityDamageEvent $event){
+    public function onDamage(EntityDamageEvent $event): void
+    {
         $entity = $event->getEntity();
         if($entity instanceof Player){
             if(isset(Godmod::getInstance()->godmod[$entity->getName()])){
@@ -19,7 +20,8 @@ class PlayerEvents implements Listener{
         }
     }
 
-    public function onJoin(PlayerJoinEvent $event){
+    public function onJoin(PlayerJoinEvent $event): void
+    {
         if(isset(Godmod::getInstance()->godmod[$event->getPlayer()->getName()])){
             unset(Godmod::getInstance()->godmod[$event->getPlayer()->getName()]);
         }
