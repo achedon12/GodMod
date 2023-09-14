@@ -7,7 +7,7 @@ Simple plugin de godmod permettant de ne prendre aucun dégats de chute lorsque 
 -----------------
 ## Permission
 
-    godmod.use
+    use.command.godmod
 
 -----------------
 ## Command
