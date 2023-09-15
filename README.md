@@ -2,20 +2,23 @@
 
 ![icon](icon.png)
 
-Simple plugin de godmod permettant de ne prendre aucun dégats de chute lorsque l'on est entré dans ce mode 
+Simple plugin de godmod permettant de ne prendre aucun dégats de chute lorsque l'on est entré dans ce mode
 
 -----------------
+
 ## Permission
 
     use.command.godmod
 
 -----------------
+
 ## Command
 
     /god
     /godmod
 
 -----------------
+
 ## Credit
 
 [FR] N'hésitez pas à donner votre avis sur le plugin et sur quoi il peut être amélioré
@@ -24,6 +27,10 @@ Simple plugin de godmod permettant de ne prendre aucun dégats de chute lorsque 
 
 
 -----------------
+
+## ChangeLog
+
+- update to pm5
 
 ## Contact
 

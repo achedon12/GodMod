@@ -22,7 +22,7 @@ class Godmod extends PluginBase{
 
     protected function onEnable(): void
     {
-        PermissionManager::getInstance()->addPermission(new Permission("use.command.godmod"));
+        PermissionManager::getInstance()->addPermission(new Permission("godmod.command.use"));
 
         $this->getServer()->getCommandMap()->register('godmod',new GodModCMD());
         $this->getServer()->getPluginManager()->registerEvents(new PlayerEvents(),$this);

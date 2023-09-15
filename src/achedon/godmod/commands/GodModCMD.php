@@ -16,7 +16,7 @@ class GodModCMD extends Command implements PluginOwned
 
     public function __construct()
     {
-        $this->setPermission("use.command.godmod");
+        $this->setPermission("godmod.command.use");
         parent::__construct("godmod", "enter in godmod", "/godmod", ["god"]);
     }
 
@@ -25,7 +25,7 @@ class GodModCMD extends Command implements PluginOwned
         if (!$sender instanceof Player) {
             return;
         }
-        if (!$sender->hasPermission("use.command.godmod") && !Server::getInstance()->isOp($sender->getName())) {
+        if (!$sender->hasPermission("godmod.command.use") && !Server::getInstance()->isOp($sender->getName())) {
             $sender->sendMessage("§cYou can't use this command");
             return;
         }
